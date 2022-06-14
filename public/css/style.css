@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --orange: #f78b00;
+    --blue: #00285f;
+    --gray: #ededed;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 550px;
+    background: black;
+}
+
+.content {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: thistle;
+} 
+
+nav ul button {
+    border: 1px solid white;
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+nav ul button:hover {
+    transition: background, color 0.6s;
+    background: var(--blue);
+    color: white;
+}
+
+.content .header-block {
+    max-width: 1000px;
+    min-width: 30px;
+    height: 450px;
+    background: #000000;
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+   -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+   position: relative;
+   z-index: 10;
+   padding: 10px;
+}
+
+.header-block img {
+    width: 46%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+.header-block .text{
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+}
+
+.header-block .text h2{
+color: white;
+margin-bottom: 20px;
+text-align: right;
+transform: translateX(-20px);
+transition: transform 0.5s;
+}
+
+.header-block .text p {
+    max-width: 280px;
+    color: white;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transform 0.4s;
+}
+
+/*gym catalog*/
+
+.gyms {
+    background: dimgray;
+}
+
+section .catalog {
+    width: 100vw;
+    padding: 100px;
+}
+
+.title-wrapper-gyms {
+    margin-top: 200px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+section .card-wrapper {
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 30px;
+    padding-top: 50px;
+}
+
+section .card-item {
+    height: 400px;
+    background: var(--gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-content {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-item img {
+    width: 80%;
+    height: 200px;
+}
+
+/*content do about no index*/
+
+ .tooglebtn:hover {
+    transition: 0.5s;
+}
+
+ .tooglebtn::before {
+    content: '+';
+    font-size: 2.5em;
+    color: dimgrey;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+}
+
+ .tooglebtn:hover::before {
+    color: black;
+}
+
+.card-item h4 {
+    width: 90%;
+}
+
+.card-item p {
+    width: 90%;
+    font-style: italic;
+    color: #00000070;
+}
+
+/*about*/
+
+.about {
+    width: 100%;
+    height: 100%;
+    background: dimgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 10px;
+}
+.title-wrapper-about {
+    text-align: center;
+}
+
+.about-content {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 500px;
+    background: darkgrey;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    width: 25%;
+    min-width: 300px;
+    height: 100%;
+    background: #000000a1;
+    border-radius: 8px;
+}
+
+.right {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 10%;
+}
+
+.right h3 {
+    text-align: right;
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: right;
+    color: black;
+    text-align: center;
+}
+
+.right p {
+    max-width: 90%;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: right;
+    color: black;
+}
+
+.about-content img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+}
+
+.title-wrapper-about {
+    padding: 30px;
+    
+   
+}
+
+/*plans*/
+
+.plans {
+    width: 100%;
+    height: 100%;
+    background: dimgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.title-wrapper-plans {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.plan-card-block {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background: darkgrey;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-gap: 30px;
+}
+
+.plan-card-item {
+    max-width: 420px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dedede3b;
+    border-radius: 4px;
+    color: var(--blue);
+    transition: 0,5em;
+}
+
+.plan-text-content {
+    max-width: 60%;
+    margin: 5px;
+}
+
+.plan-card-item img {
+    width: 150px;
+    height: 150px;
+}
+
+.plan-card-item:hover {
+    background-color: #ededed; 
+}
+
+.plan-card-item button {
+
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    background: var(--blue);
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0,3s ease;
+    margin-bottom: 5px;
+}
+
+/*formulario*/
+
+body #form-reservation{
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+}
+
+
+#form-reservation input[type="text"],
+#form-reservation input[type="email"],
+#form-reservation input[type="tel"],
+#form-reservation textarea,
+#form-reservation button[type="submit"]{
+    font:400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+
+.container {
+    max-width: 100%;
+    min-width: 100%;
+    background: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    background-color: #dcdcdc;
+    }
+    
+#form-reservation {
+    background: #f9f9f9;
+    padding: 100px;
+    margin: 0px 0;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.container h3{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#form-reservation h4{
+    margin: 20px 0 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+ fieldset{
+    border: medium none !important;
+    margin: 0 0 25px;
+    min-width: 100%;
+    padding:0px;
+    width: 100%;    
+}
+
+#form-reservation input[type="text"],
+#form-reservation input[type="email"],
+#form-reservation input[type="tel"],
+#form-reservation textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#form-reservation input[type="email"]{
+    margin: 0 0 5px;
+}
+
+
+#form-reservation input[type="text"]:hover,
+#form-reservation input[type="email"]:hover,
+#form-reservation input[type="tel"]:hover,
+#form-reservation textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#form-reservation button[type="submit"]{
+cursor: pointer;
+width: 100%;
+border: none;
+background: #47b1d1;
+color: #fff;
+margin: 0 0 15px;
+padding: 10px;
+font-size: 15px;
+}
+
+#form-reservation button[type="submit"]:hover{
+    background: #dcdcdc;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#form-reservation button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0, 0.5);
+}
+
+.copyright {
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    
+}
+
+#form-reservation input:focus,
+#form-reservation textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: 250px;
+}
+
+footer .main {
+    width: 100%;
+    height: 200px;
+    background: black;
+    padding: 20px 10px;
+}
+
+.footer-links {
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-company,
+.footer-rental,
+.footer-contact,
+.footer-social {
+    color: white;
+    height: 100%;
+    min-height: 100px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-bottom: 8px;
+}
+
+.main .footer-social img {
+    width: 32px;
+    height: 32px;
+}
+
+footer .last {
+    width: 100%;
+    height: 50px;
+    background: var(--blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustments*/
+
+@media (max-width: 576px) {
+    nav ul li {
+        display: none;
+    }
+
+    .header-block img {
+        width: 70%;
+        position: absolute;
+        right: 16%;
+        top: 30%;
+    }
+
+    .header-block .text {
+        position: absolute;
+        bottom: 10%;
+        left: 15;
+    }
+
+    section .filter-card {
+       width: 390px;
+       padding: 0px 10px;
+    }
+
+    .search-input {
+        max-width: 700px;
+        min-width: 240px;
+    }
+
+    .search-button {
+        max-width: 150px;
+        min-width: 80px;
+    }
+
+    .card-item img {
+        width: 70%;
+        height: 55%;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+
+    .title-wrapper-about {
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 90%;
+    }
+
+    .right p {
+        width: 100%;
+        margin: 0px;
+        text-align: left; 
+    }
+
+    .plans {
+        height: 100%;
+    }
+
+    .plan-card-block {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    footer .main {
+        height: 100%
+    }
+
+    .footer-links {
+        flex-direction: column;
+        padding-left: 10%;
+    }
+}
